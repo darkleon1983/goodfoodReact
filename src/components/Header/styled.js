@@ -28,11 +28,22 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   width: 100px;
   display: inline-flex;
-  margin: 24px 0;
+  margin: 24px 0 12px 0;
   :hover {
     color: gray;
   }
   &.active {
     color: #8bc34a;
   }
+
+  &:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: block;
+} 
+
 `
